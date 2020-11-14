@@ -37,12 +37,12 @@ class StatusBar extends React.Component {
     };
 
     randomValues = () => {
-        let bodyMin = 35;
-        let bodyMax = 43;
+        let bodyMin = 37;
+        let bodyMax = 39;
         let body = Math.floor(Math.random() * (bodyMax - bodyMin)) + bodyMin;
 
-        let tempMin = -11;
-        let tempMax = 35;
+        let tempMin = 18;
+        let tempMax = 22;
         let temp = Math.floor(Math.random() * (tempMax - tempMin)) + tempMin;
 
         this.setState({bodyTemp: body, airTemp: temp});
